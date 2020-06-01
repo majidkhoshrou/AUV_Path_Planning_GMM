@@ -1,0 +1,8 @@
+
+
+
+1. run the initialization
+
+2. open the fleet_model simulink file
+
+3. run it
