@@ -1,0 +1,155 @@
+CC     = "C:\Program Files\MATLAB\R2013b\sys\lcc\bin\lcc.exe"
+LD     = "C:\Program Files\MATLAB\R2013b\sys\lcc\bin\lcclnk.exe"
+LIBCMD = "C:\Program Files\MATLAB\R2013b\sys\lcc\bin\lcclib.exe"
+CFLAGS = -c -Zp8 -DMATLAB_MEX_FILE -noregistrylookup 
+LDFLAGS = -s -dll -L"C:\Program Files\MATLAB\R2013b\sys\lcc\lib" 
+LIBFLAGS = 
+
+OBJECTS = \
+	"simulation_sfun.obj"\
+	"c1_simulation.obj"\
+	"c2_simulation.obj"\
+	"c3_simulation.obj"\
+	"c4_simulation.obj"\
+	"c5_simulation.obj"\
+	"c6_simulation.obj"\
+	"c7_simulation.obj"\
+	"c8_simulation.obj"\
+	"c9_simulation.obj"\
+	"c10_simulation.obj"\
+	"c11_simulation.obj"\
+	"c12_simulation.obj"\
+	"c13_simulation.obj"\
+	"c14_simulation.obj"\
+	"c15_simulation.obj"\
+	"c16_simulation.obj"\
+	"c17_simulation.obj"\
+	"c18_simulation.obj"\
+	"c19_simulation.obj"\
+	"c20_simulation.obj"\
+	"c21_simulation.obj"\
+	"c22_simulation.obj"\
+	"c23_simulation.obj"\
+	"c24_simulation.obj"\
+	"c25_simulation.obj"\
+	"c26_simulation.obj"\
+	"c27_simulation.obj"\
+	"c28_simulation.obj"\
+	"c29_simulation.obj"\
+	"c30_simulation.obj"\
+	"c31_simulation.obj"\
+	"c32_simulation.obj"\
+	"c33_simulation.obj"\
+	"c34_simulation.obj"\
+	"c35_simulation.obj"\
+	"c36_simulation.obj"\
+	"c37_simulation.obj"\
+	"c38_simulation.obj"\
+	"c39_simulation.obj"\
+	"c40_simulation.obj"\
+	"simulation_sfun_registry.obj"\
+	"lccstub.obj"\
+	"C:\Program Files\MATLAB\R2013b\sys\lcc\mex\lccdef.def"\
+	"C:\Program Files\MATLAB\R2013b\stateflow\c\mex\lib\win32\sfc_mexlcc.lib"\
+	"C:\Program Files\MATLAB\R2013b\stateflow\c\debugger\lib\win32\sfc_debuglcc.lib"\
+	"C:\Program Files\MATLAB\R2013b\extern\lib\win32\lcc\libmwblas.lib"\
+	"C:\Program Files\MATLAB\R2013b\extern\lib\win32\lcc\libmx.lib"\
+	"C:\Program Files\MATLAB\R2013b\extern\lib\win32\lcc\libmex.lib"\
+	"C:\Program Files\MATLAB\R2013b\extern\lib\win32\lcc\libmat.lib"\
+	"C:\Program Files\MATLAB\R2013b\extern\lib\win32\lcc\libfixedpoint.lib"\
+	"C:\Program Files\MATLAB\R2013b\extern\lib\win32\lcc\libut.lib"\
+	"C:\Program Files\MATLAB\R2013b\extern\lib\win32\lcc\libmwmathutil.lib"\
+	"C:\Program Files\MATLAB\R2013b\extern\lib\win32\lcc\libemlrt.lib"\
+	"C:\Program Files\MATLAB\R2013b\lib\win32\libippmwipt.lib"\
+
+INCLUDE_PATH= -I"C:\Program Files\MATLAB\R2013b\sys\lcc\include"  -I"C:\Program Files\MATLAB\R2013b\extern\include"  -I"C:\Program Files\MATLAB\R2013b\simulink\include"  -I"C:\Program Files\MATLAB\R2013b\rtw\c\src"  -I"C:\Program Files\MATLAB\R2013b\stateflow\c\mex\include"  -I"C:\Program Files\MATLAB\R2013b\stateflow\c\debugger\include"  -I"C:\Program Files\MATLAB\R2013b\toolbox\stateflow\src\sf_runtime\export\include\sf_runtime" 
+ 
+
+simulation_sfun.mexw32 : $(MAKEFILE) $(OBJECTS)
+	$(LD) $(LDFLAGS) -o simulation_sfun.mexw32 @simulation_sfun.lmko
+simulation_sfun.obj :	"simulation_sfun.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "simulation_sfun.c"
+c1_simulation.obj :	"c1_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c1_simulation.c"
+c2_simulation.obj :	"c2_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c2_simulation.c"
+c3_simulation.obj :	"c3_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c3_simulation.c"
+c4_simulation.obj :	"c4_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c4_simulation.c"
+c5_simulation.obj :	"c5_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c5_simulation.c"
+c6_simulation.obj :	"c6_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c6_simulation.c"
+c7_simulation.obj :	"c7_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c7_simulation.c"
+c8_simulation.obj :	"c8_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c8_simulation.c"
+c9_simulation.obj :	"c9_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c9_simulation.c"
+c10_simulation.obj :	"c10_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c10_simulation.c"
+c11_simulation.obj :	"c11_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c11_simulation.c"
+c12_simulation.obj :	"c12_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c12_simulation.c"
+c13_simulation.obj :	"c13_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c13_simulation.c"
+c14_simulation.obj :	"c14_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c14_simulation.c"
+c15_simulation.obj :	"c15_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c15_simulation.c"
+c16_simulation.obj :	"c16_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c16_simulation.c"
+c17_simulation.obj :	"c17_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c17_simulation.c"
+c18_simulation.obj :	"c18_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c18_simulation.c"
+c19_simulation.obj :	"c19_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c19_simulation.c"
+c20_simulation.obj :	"c20_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c20_simulation.c"
+c21_simulation.obj :	"c21_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c21_simulation.c"
+c22_simulation.obj :	"c22_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c22_simulation.c"
+c23_simulation.obj :	"c23_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c23_simulation.c"
+c24_simulation.obj :	"c24_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c24_simulation.c"
+c25_simulation.obj :	"c25_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c25_simulation.c"
+c26_simulation.obj :	"c26_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c26_simulation.c"
+c27_simulation.obj :	"c27_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c27_simulation.c"
+c28_simulation.obj :	"c28_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c28_simulation.c"
+c29_simulation.obj :	"c29_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c29_simulation.c"
+c30_simulation.obj :	"c30_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c30_simulation.c"
+c31_simulation.obj :	"c31_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c31_simulation.c"
+c32_simulation.obj :	"c32_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c32_simulation.c"
+c33_simulation.obj :	"c33_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c33_simulation.c"
+c34_simulation.obj :	"c34_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c34_simulation.c"
+c35_simulation.obj :	"c35_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c35_simulation.c"
+c36_simulation.obj :	"c36_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c36_simulation.c"
+c37_simulation.obj :	"c37_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c37_simulation.c"
+c38_simulation.obj :	"c38_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c38_simulation.c"
+c39_simulation.obj :	"c39_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c39_simulation.c"
+c40_simulation.obj :	"c40_simulation.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "c40_simulation.c"
+simulation_sfun_registry.obj :	"simulation_sfun_registry.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "simulation_sfun_registry.c"
+lccstub.obj :	"C:\Program Files\MATLAB\R2013b\sys\lcc\mex\lccstub.c"
+	$(CC) $(CFLAGS) $(INCLUDE_PATH) "C:\Program Files\MATLAB\R2013b\sys\lcc\mex\lccstub.c"
